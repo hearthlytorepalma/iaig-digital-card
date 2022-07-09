@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+/*=======
+Designed by: Nicole Naga
+Programmed by: Hearthly Torepalma
+========*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(/images/white-bg.webp);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:160px;
+    margin-bottom: 20px;
+    text-align: center;
+   
+}
+
+.container {
+    
+    border-radius: 12%;
+    border: double 2px transparent; 
+    background-image: linear-gradient(rgb(229, 231, 244),rgb(255, 255, 255)), 
+    linear-gradient(160deg, rgb(255, 255, 255), rgb(233, 233, 233), rgb(233, 231, 231));
+    border-image-slice: 2;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 550px;
+    width: 650px;;
+    box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.15) ;    
+    animation: welcome 1500ms ease-out;
+}
+.picture-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  
+}
+.picture-area {
+    justify-content: center;
+    display: flex;
+    justify-content: center;  
+    align-content: center;
+}
+
+.profile-picture {
+    margin-top: -110px;
+    display: inline-flex;
+    width: 145px;
+    height: 145px;
+    object-fit:cover;
+    border: 2px solid blue;
+    box-sizing:content-box;
+    border: 8px solid rgb(255, 166, 0);
+    box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.42);
+    border-radius: 100%;
+    
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.name-area {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+.name{
+   
+    font-weight:400;
+    border-radius: 50px;
+    background: rgb(241, 241, 241);
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    padding: 5px 90px 5px 90px;
+    color: rgb(255, 166, 0);
+    box-shadow: inset 4px 6px 5px rgb(214, 214, 214), inset -6px -5px 5px #f9f9f9;
+}
+.name .title{
+    font-size: 10px;
+    color: rgb(171, 167, 167);
+}
+.location{
+    margin: 30px 0 25px 0;
+    color: rgb(185, 180, 180);
+    font-size: 12px;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    font-size: 13px;
+    margin: 5px 0 20px -22px;
+    flex-shrink: 1;
+  
+        
+}
+.con-area{
+    
+    width: auto;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+ 
+  
+  
+}
+.icon{
+    align-items: center;
+    background-color:  rgb(255, 166, 0);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 30px;
+    padding: 20px; 
+    display: inline-flex;
+    transform: translate(15px);
+    margin-top: -10px;
+    background-image: linear-gradient(150deg,rgb(255, 166, 0),rgb(247, 204, 129));
+    box-shadow: 0 0 10px 0 rgba(241, 157, 3, 0.361);
+
+
+}
+.info{
+    background-color: rgb(241, 241, 241);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color:  rgb(255, 166, 0);
+    width: 180px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 6px 5px rgb(214, 214, 214), inset -6px -5px 5px #f9f9f9;
+
+    
+    
+
+}
+.site-area {
+    
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+ 
+}
+.site-link{
+    font-size: 15px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border: 6px solid white;
+    background-color:  rgb(255, 166, 0);
+    border-radius: 50px;
+    width: 500px;
+    height: 65px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(85, 85, 85, 0.19);
+    background-image: linear-gradient(rgb(255, 166, 0),rgb(234, 208, 163));
+    transition: border 1s;
+    transition: color 1s;
+    transition: ease-out .10s;
+}
+.site-link:hover{
+    transition: ease-out .10s;
+    border: 6px solid  rgb(255, 191, 73);
+    color:  rgb(255, 166, 0);
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(202, 202, 202));
+    box-shadow: 0 0 5px 0 rgba(85, 85, 85, 0.276);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.site-link:active {
+    transform: translateY(-1px);
+    width: 490px;    
+    height: 62px;
+    padding-top: 18px;
+    box-shadow: 0 2px 10px 0 rgba(39, 38, 38, 0.644);
+ 
+}
+
+.links-area {
+    width: 100%;
+    height: 104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8px;
+    align-content: center;
+}
+.link{
+    margin: 18px;
+    width: auto;
+}
+.fb,.ln,.ig,.yt{
+    min-width: 60px;
+    min-height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    color:  rgb(255, 166, 0);
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.20);
+    border: none;
+    cursor: pointer;
+    transition: ease-out .10s;
+}
+.fb:hover, .ln:hover, .ig:hover, .yt:hover{
+    transition: ease-out .10s;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.fb:active, .ln:active, .ig:active, .yt:active{
+
+    color:  rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(255, 166, 0),rgb(234, 208, 163));
+    transform: translateY(0px);
+    box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.431);
+
+}
+
+
+.share-area {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.share{
+    font-size: 40px;
+    color:  rgb(255, 166, 0);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 60px; 
+    height: 60px;
+    background-color:transparent;
+    display: inline-flex;
+    margin: 0 5px 0 5px;
+    border:none;
+    cursor: pointer;
+    transition: ease-out .09s;
+}
+
+.share:active{
+    
+    box-shadow: inset 5px 5px 5px rgb(200, 200, 200), inset -3px -3px 5px rgb(228, 227, 227);
+    font-size: 35px;
+}
+
+.share-area>p{
+    font-size: 12px;
+    color: rgb(152, 100, 2);
+    font-weight:500;
+    
+}
+.xx{
+    font-size: 12px;
+    color: rgb(152, 100, 2);
+    font-weight:500;
+    width: 100%;
+    margin: 3px 0 3px 0;
+}
+
+@keyframes welcome {
+    from{
+      opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+
+
+}
+
