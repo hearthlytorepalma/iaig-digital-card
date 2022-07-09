@@ -214,7 +214,7 @@ body{
     margin: 18px;
     width: auto;
 }
-.fb,.ln,.ig,.yt{
+.fb,.ln,.ig,.yt,.zm{
     min-width: 60px;
     min-height: 60px;
     background-color: white;
@@ -228,14 +228,14 @@ body{
     cursor: pointer;
     transition: ease-out .10s;
 }
-.fb:hover, .ln:hover, .ig:hover, .yt:hover{
+.fb:hover, .ln:hover, .ig:hover, .yt:hover, .zm:hover{
     transition: ease-out .10s;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
 }
 
-.fb:active, .ln:active, .ig:active, .yt:active{
+.fb:active, .ln:active, .ig:active, .yt:active, .zm:active{
 
     color:  rgb(255, 255, 255);
     background-image: linear-gradient(rgb(255, 166, 0),rgb(234, 208, 163));
