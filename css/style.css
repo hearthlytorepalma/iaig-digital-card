@@ -12,7 +12,7 @@ Programmed by: Hearthly Torepalma
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-image: url(/images/white-bg.webp);
+    background-image: url("white-bg.webp");
     background-size:cover;
     display: flex;
     justify-content: center;
