@@ -12,8 +12,8 @@ Programmed by: Hearthly Torepalma
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-image: url("white-bg.webp");
-    background-size:cover;
+    background-image: url("bg-original.png");
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -37,7 +37,8 @@ body{
     align-items: center;
     height: 550px;
     width: 650px;;
-    box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.15) ;    
+    box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.42);
+  /*  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.15); */ 
     animation: welcome 1500ms ease-out;
 }
 .picture-container {
@@ -60,7 +61,6 @@ body{
     width: 145px;
     height: 145px;
     object-fit:cover;
-    border: 2px solid blue;
     box-sizing:content-box;
     border: 8px solid rgb(255, 166, 0);
     box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.42);
@@ -177,7 +177,8 @@ body{
     height: 65px;
     padding: 15px;
     cursor: pointer;
-    box-shadow: 0 0 10px 0 rgba(85, 85, 85, 0.19);
+    box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.42);
+    /*box-shadow: 0 0 10px 0 rgba(85, 85, 85, 0.19);*/
     background-image: linear-gradient(rgb(255, 166, 0),rgb(234, 208, 163));
     transition: border 1s;
     transition: color 1s;
