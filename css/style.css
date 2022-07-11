@@ -37,9 +37,11 @@ body{
     align-items: center;
     height: 550px;
     width: 650px;;
-    box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.42);
+    box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.181);
   /*  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.15); */ 
     animation: welcome 1500ms ease-out;
+    
+
 }
 .picture-container {
     display: flex;
@@ -177,7 +179,7 @@ body{
     height: 65px;
     padding: 15px;
     cursor: pointer;
-    box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.42);
+    box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.181);
     /*box-shadow: 0 0 10px 0 rgba(85, 85, 85, 0.19);*/
     background-image: linear-gradient(rgb(255, 166, 0),rgb(234, 208, 163));
     transition: border 1s;
