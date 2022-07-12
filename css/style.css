@@ -16,15 +16,20 @@ body{
     background-size: cover;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     margin-top:160px;
     margin-bottom: 20px;
     text-align: center;
-   
+
 }
 
 .container {
-    
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 0 50px 0 50px;
     border-radius: 12%;
     border: double 2px transparent; 
     background-image: linear-gradient(rgb(229, 231, 244),rgb(255, 255, 255)), 
@@ -32,23 +37,19 @@ body{
     border-image-slice: 2;
     background-origin: border-box;
     background-clip: content-box, border-box;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    height: 550px;
     width: 650px;;
     box-shadow: 0 0 15px 0 rgba(255, 166, 0, 0.181);
   /*  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.15); */ 
     animation: welcome 1500ms ease-out;
-    
+    height: auto;
 
+    
 }
 .picture-container {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 15px;
-  
 }
 .picture-area {
     justify-content: center;
@@ -72,7 +73,6 @@ body{
 .content-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
@@ -105,25 +105,20 @@ body{
 }
 
 .contact-area {
+
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     font-size: 13px;
-    margin: 5px 0 20px -22px;
-    flex-shrink: 1;
-  
-        
-}
-.con-area{
+   
     
+}
+.con-area{ 
     width: auto;
-    margin: 0 10px 0 10px;
     display: flex;
     justify-content: center ;
     align-items: center;
- 
-  
-  
+    margin: 10px 5px 10px -5px;
 }
 .icon{
     align-items: center;
@@ -281,6 +276,7 @@ body{
     font-size: 12px;
     color: rgb(152, 100, 2);
     font-weight:500;
+
     
 }
 .xx{
@@ -298,7 +294,56 @@ body{
     to{
      opacity: 1;
     }
-
-
 }
 
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        background-image: url("mobile-bg.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        transition: ease-in .5s;
+        text-align: center;
+    }
+    
+    .container{
+        margin: 0 40px 0 40px;
+        min-width: 90%;
+        min-height: 100%;
+    }
+
+    .picture-area, .content-container{
+        width: 90%;
+        transition: ease-in .5s;
+      }
+      .contact-area {
+        flex-direction: column;
+     
+        margin-top: -25px;
+        transition: ease-in .5s;
+        padding: -29px;
+      }
+      .con-area{
+        margin: 10px 0 10px 0;
+      }
+      .location{
+        margin: 20px 0 30px 0;
+        color: rgb(185, 180, 180);
+        font-size: 12px;
+    }
+    .share-area{
+
+        margin-bottom: 15px;
+    }
+    .links-area {    
+        margin-top: -5px;
+        flex-shrink: 1;
+    }
+    .link {
+        transition: ease-in .5s;
+        margin: 0px 6px 0px 6px;
+        align-self: center;
+    }
+}
